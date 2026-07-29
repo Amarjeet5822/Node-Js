@@ -73,7 +73,7 @@
 // // Parse a file path
 // const pathInfo = path.parse('/users/docs/file.txt');
 // console.log('pathInfo = ', pathInfo);
-// // pathInfo =  {
+// // o/p => pathInfo =  {
 // //   root: '/',
 // //   dir: '/users/docs',
 // //   base: 'file.txt',

@@ -52,7 +52,13 @@ function logTime(taskName: string): void {
  * pbkdf2 to one of Libuv's worker threads in the thread pool.
  */
 function runCryptoTask(id: number): void {
-  crypto.pbkdf2('secret-password', 'salt-string', 100000, 512, 'sha512', () => {
+  crypto.pbkdf2('secret-password', 'salt-string', 100000, 8, 'sha256', (err, data) => {
+    if (err) {
+      console.error(`Crypto Task #${id} Error:`, err.message);
+      return;
+    }
+    console.log('[hash-data ]: ', Buffer.isBuffer(data) ? data.toString('hex') : data);
+    
     logTime(`Crypto Task #${id} Completed (Libuv Threadpool)`);
   });
 }

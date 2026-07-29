@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo:1.1": "tsx 01-core-internals/1.1-v8-libuv-threadpool.ts",
     "demo:1.2": "tsx 01-core-internals/1.2-event-loop-lifecycle.ts",
-    "demo:1.3": "tsx 01-core-internals/1.3-modules-demo.ts"
+    "demo:1.3": "tsx 01-core-internals/1.3-modules-demo.ts",
+    "demo:1.4": "AUTO_TEST_RUN=true tsx 01-core-internals/1.4-process-management.ts --port=8080 --mode=production",
+    "demo:1.5": "tsx 01-core-internals/1.5-file-system-promises.ts",
+    "demo:1.6": "tsx 01-core-internals/1.6-event-emitter-patterns.ts"
   },
   "keywords": [],
   "author": "",
