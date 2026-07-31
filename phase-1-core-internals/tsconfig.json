@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "esModuleInterop": true
   },
-  "include": ["01-core-internals/**/*"]
+  "include": ["./**/*"]
 }

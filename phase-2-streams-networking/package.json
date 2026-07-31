@@ -1,0 +1,32 @@
+{
+  "name": "phase-2-streams-networking",
+  "version": "1.0.0",
+  "description": "Phase 2: High-Performance Data Processing, Buffers, Streams, HTTP Server, Clustering & Worker Threads",
+  "main": "2.1-buffers-binary-data.ts",
+  "scripts": {
+    "demo:2.1": "tsx 2.1-buffers-binary-data.ts",
+    "demo:2.2": "tsx 2.2-streams-backpressure.ts",
+    "demo:2.3": "tsx 2.3-native-http-server.ts",
+    "demo:2.4": "tsx 2.4-clustering-ipc.ts",
+    "demo:2.5": "tsx 2.5-worker-threads.ts",
+    "demo:2.6": "tsx 2.6-memory-leak-profiling.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "nodejs",
+    "buffers",
+    "streams",
+    "http",
+    "clustering",
+    "worker-threads",
+    "memory-profiling"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  }
+}
